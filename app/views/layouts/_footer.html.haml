@@ -1,0 +1,40 @@
+.footer
+  .center-wrap
+    .row-fluid
+      .span5
+        .footer-logo
+          = image_tag 'marcom-vineya-logo.png', alt: 'Vineya'
+      %ul.span5.footer-menu
+        %li.title LEARN
+        %li= link_to 'For Interpreters', '/pages/jobs'
+        %li= link_to 'For Businesses', '/pages/companies'
+        %li= link_to 'How It Works', '/pages/how-it-works'
+      %ul.span5.footer-menu
+        %li.title RESOURCES
+        %li= link_to 'News', 'http://news.govineya.com/'
+        -#%li= link_to 'About', ' /pages/about'
+        %li= link_to 'Press Releases', 'http://news.govineya.com/'
+        %li= link_to 'Video', 'http://vimeo.com/csdvideos'
+        -#%li= link_to 'Downloads', '#'
+      %ul.span5.footer-menu
+        %li.title SUPPORT
+        -#%li= link_to 'FAQ', '#'
+        %li= link_to 'suport@govineya.com', 'mailto:suport@govineya.com'
+        %li= link_to '866.662.2265', 'tel:866-662-2265'
+        %li= link_to 'System Requirements', '/pages/system-requirements'
+
+      %ul.span4.footer-menu
+        %li.title CONNECT
+        %li.lil-squares
+          = link_to 'https://www.facebook.com/CSDCommunity', target:'_blank' do
+            %i.icon-facebook-sign
+          = link_to 'https://twitter.com/CSD_Tweets', target:'_blank' do
+            %i.icon-twitter-sign
+          = link_to 'http://www.linkedin.com/company/csd_99904', target:'_blank' do
+            %i.icon-linkedin-sign
+          = link_to 'http://instagram.com/csdig', target:'_blank' do
+            %i.icon-instagram
+
+.bottom-line
+  .center-wrap
+    &copy; 2013 Vineya, Inc | All Rights Reserved.

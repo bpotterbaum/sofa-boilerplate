@@ -1,0 +1,15 @@
+.row-fluid.header
+  .span4
+    .logo
+      = link_to home_path do
+        = image_tag "marcom-vineya-logo#{'-light' unless page == 'home'}.png", alt: 'Vineya'
+  .span2
+  .span15
+    %ul.main-menu
+      %li= link_to 'For Interpreters', '/pages/jobs', class:"#{'active' if page == 'jobs'}"
+      %li= link_to 'For Companies', '/pages/companies', class:"#{'active' if page == 'companies'}"
+      %li= link_to 'How It Works', '/pages/how-it-works', class:"#{'active' if page == 'how-it-works'}"
+      %li= link_to 'News', 'http://news.govineya.com/'
+  .span3
+    %ul.user-menu
+      %li= link_to 'Sign In', new_user_session_path
